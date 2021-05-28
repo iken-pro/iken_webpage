@@ -1,0 +1,271 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "凸版文久ゴシック";
+}
+
+/*main-grid*/
+.main-grid {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "left main"
+    "footer footer";
+    grid-template-columns: 0fr 10fr;
+    grid-gap: 0px;
+}
+
+/*header*/
+header {
+    grid-area: header;
+    background-color: #fff;
+    color: #594A31;
+    width: 100%;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.logo {
+    text-align: left;
+}
+
+/*aside*/
+/*aside {
+    grid-area: left;
+    background-color: #fff;
+    color: #70AD47;
+}*/
+
+/*botton*/
+
+/*article*/
+
+article {
+    grid-area: main;    /*main*/
+    background-color: #ffff;
+    color: #594A31;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+/*footer*/
+footer {
+    height: 62.5px;
+    grid-area: footer;
+    background-color: #594A31;
+    color: white;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em
+}
+.center h3 {
+    margin: 0;
+    position: absolute;
+    /*top: 75%;*/
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+}
+.center p {
+    margin: 0;
+    position: absolute;
+    /* top: 100%; */
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+
+
+.background{
+    margin: 50rem;
+    font-size: 20px;
+}
+    .inner{
+        text-align: left;
+        width: 100%;
+    }
+    .background.center{
+        text-align:center;
+    }
+
+
+figure {
+        width: 100%;
+        position: relative;
+}
+  .figure-img {
+    width: 100%;
+    vertical-align: top;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  figure figcaption {
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .decorator {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .font-size{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10em;
+    width: 45%;
+    text-align: center;
+  }
+
+
+.img-size{
+    width: 50%;
+}
+
+  
+/*https://www.asobou.co.jp/blog/web/css-menu*/
+.menu-btn {
+    position: fixed;
+    top: 0px;
+    right: -3.75px;
+    display: flex;
+    height: 56px;
+    width: 56px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #70AD47;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check{
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #70AD47;
+    transition: all 0.5s;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+  
+  Resources
+
+
+/*
+body{
+    background-color: white;
+    color: saddlebrown;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em
+}
+h1{
+    color: saddlebrown;
+    font-size: 20pt;
+}
+h2{
+    color: saddlebrown;
+    font-size: large;
+}
+#id1{
+    font-size: small;
+    color: lightcoral;
+}
+.text-background-air{
+    font-size: 10;
+    font-weight: 100;
+    line-height: 1.4em;
+}
+.text-background-air > span {
+    position: relative;
+    display: inline-block;
+}
+.text-background-air > span::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    background-color: powderblue;
+    z-index: -1;
+}
+*/
