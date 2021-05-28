@@ -1,0 +1,51 @@
+body{
+    background-color:lightseagreen;
+    color:whitesmoke;
+    
+}
+h1{
+
+    background-color:lightseagreen;
+    color:whitesmoke;
+    font-size: 30pt;
+}
+p{
+
+    background-color:white;
+    color:lightseagreen;
+
+}
+#id1{
+font-size:20;
+color:blue
+
+
+}
+#id2{
+    font-size:30;
+    color:blue
+    
+    
+    }#id3{
+        font-size:20;
+        color:blue
+        
+        
+        }
+        #id4{
+            font-size:30;
+            color:blue
+            
+            
+            }#id5{
+                font-size:20;
+                color:blue
+                
+                
+                }
+                #id6{
+                    font-size:30;
+                    color:blue
+                    
+                    
+                    }
