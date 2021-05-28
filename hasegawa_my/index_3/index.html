@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+<title>あいけんのペーじ</title>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+  <section>
+      <div class ="circle"></div>
+      <header>
+          <a href ='#' ><img src ="images/logo.png"class="logo"></a>
+          <ul>
+            <li><a href ='#'>Home</a></li>
+            <li><a href ='#'>Menu</a></li>
+            <li><a href ='#'>What's New</a></li>
+            <li><a href ='#'>Contact</a></li>
+          </ul>
+        </header> 
+        <div class ="content">
+          <div class ="textBox">
+              <h2>It's no just group<br>It's <span>Iken</span></h2>
+              <p>
+We are INCT students,
+We are in iken <p></p>We like to make any things.
+But it is difficult. <p></p>So we have to study very hard<p></p>Thank you.
+              </p>
+              <a href="#">Click simayenaga</a>
+            </div>
+          <div class ="imgBox">
+            <img src ="images/img1.png" class ="starbucks">
+          </div>
+        </div>
+        <ul class ="thumb">
+         <li><img src ="images/ball.png" onclick="imgSlider('images/img1.png');changeCircleColor('#ff7f50')"></li>
+         <li><img src ="images/ball.png" onclick="imgSlider('images/img2.png');changeCircleColor('#00ffff')"></li>
+         <li><img src ="images/ball.png" onclick="imgSlider('images/img3.png');changeCircleColor('#98fb98')"></li>
+        </ul>
+        <ul class = "sci">
+            <li><a href ="#"><img src ="images/facebook.png"></a></li>
+            <li><a href ="#"><img src ="images/twitter.png"></a></li>
+            <li><a href ="#"><img src ="images/instagram.png"></a></li>
+        </ul>
+      </section>
+      <script type ="text/javascript">
+      function imgSlider(anything){
+          document.querySelector('.starbucks').src =anything;
+      }
+      function changeCircleColor(color){
+          const circle =document.querySelector('.circle');
+          circle.style.background =color;
+        
+        
+        }
+
+    </script>
+    </body>
+</html>
