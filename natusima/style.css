@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(221, 241, 241);
+    color:rgb(134, 51, 18)
+}
+
+p{
+    background-color:white ;
+    color:saddlebrown;
+}
+
+.cen{
+    text-align:center;
+}
+
+.sketch-img{
+    text-align:center;
+    width:1300x;
+    height:1000px;
+    border-radius:10px;
+    /*background-image: url('./img/NiziU.jpg');
+    background-repeat:no-repeat;*/
+}
