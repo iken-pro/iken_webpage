@@ -1,3 +1,6 @@
+body{
+  background-color: lightpink;
+}
 
 @keyframes rotate-y{
     0%{transform:rotateY(0deg);}
