@@ -7284,8 +7284,8 @@ img {
   .nav-tabs {
     display: inline-block;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
   }
   .nav-tabs .nav-item>.nav-link {
